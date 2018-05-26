@@ -1,0 +1,824 @@
++<!DOCTYPE html>
++<html lang="es">
++<head>
++	<meta charset="utf-8">
++	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
++	<title>OVI</title>
++	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
++	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
++	<link rel="stylesheet" type="text/css" href="css/style.css">
++</head>
++<body>
++	<header>
++		<div class="banner">
++			<div class="logo">
++				<img src="img/logo.png">
++			</div>
++			<h1>Diseño de sitios web</h1>
++		</div>
++		<nav class="navbar navbar-primary navbar-expand-md navbar-dark bg-dark">
++			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
++				<span class="navbar-toggler-icon"></span>
++			</button>
++
++			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
++				<ul class="navbar-nav mr-auto">
++					<li class="nav-item active">
++						<a class="nav-link" href="index.html">Inicio</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion2.html">Seccion 2</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion3.html">Seccion 3</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion4.html">Seccion 4</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="acerca.html">Acerca de</a>
++					</li>
++				</ul>
++			</div>
++		</nav>
++	</header>
++	<div class="container">
++		<div class="row">
++			<div class="col-sm-8 text-justify">
++				<center>
++				<h1>Acerca de:</h1><br>
++				<h3><p>Desarrolado por: <b>Ricardo Alberto Salinas</b></p></h3>
++				<p>Universidad nacional abierta y a distancia</p>
++				<p>DISEÑO DE SITIOS WEB</p>
++				<p>UNAD</p>
++				<p>2018</p>
++				</center>
++			</div>
++			<aside class="col-sm-3 ml-sm-auto">
++				<div class="aside-module">
++					<h4>Menu</h4>
++					<ul class="list-menu">
++						<li>
++							<a class="nav-link" href="index.html">Inicio</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion2.html">Seccion 2</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion3.html">Seccion 3</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion4.html">Seccion 4</a>
++						</li>
++						<li>
++							<a class="nav-link" href="acerca.html">Acerca de</a>
++						</li>
++					</ul>
++				</div>
++			</aside>
++		</div>
++	</div>
++	<footer>
++		<p>Desarrolado por: <b>Ricardo Alberto Salinas</b></p>
++		<p>Universidad nacional abierta y a distancia</p>
++		<p>UNAD</p>
++		<p>2018</p>
++		<center><h2>Contador de Visitas</center></h2><a href="https://www.cerotec.net/estadisticas-120041/unad.com" title="abrir detalles"><img src="https://www.cerotec.net/contador.php?t=16&s=2&i=120041" alt="www.cerotec.net"></a> <br><a href='' style='font-size:12px;' ></a></center>
++	</footer>
++
++	<script src="js/jquery.min.js"></script>
++	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
++	<script src="js/bootstrap.min.js"></script>
++</body>
++</html> 
+  
+7  css/bootstrap.min.css
+Large diffs are not rendered by default.
+
+  
+4  css/font-awesome.min.css
+Large diffs are not rendered by default.
+
+  
+19  css/index.html
+@@ -1,19 +0,0 @@
+-<!DOCTYPE html>
+-
+-<html>
+-
+-<head>
+-<title>
+-403 Forbidden
+-</title>
+-
+-</head>
+-
+-<body>
+-
+-
+-<p>Directory access is forbidden.</p>
+-
+-
+-</body>
+-</html>
+  
+120  css/style.css
+@@ -0,0 +1,120 @@
++.banner{
++	display: block;
++	width: 100%;
++	height: 200px;
++background: #005C97;  /* fallback for old browsers */
++background: -webkit-linear-gradient(to top, #0066ba, #4eb8fc);  /* Chrome 10-25, Safari 5.1-6 */
++background: linear-gradient(to top, #0066ba, #4eb8fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
++
++	padding:  0px 20px;
++	position: relative;
++	z-index: 10;
++}
++
++.banner:before{
++	content: "";
++	position: absolute;
++	top: 0px;
++	left: 0px;
++	width: 100%;
++	height: 100%;
++	background: url(../img/hexagon.png);
++	background-size: 60px 60px;
++	z-index: -1;
++	opacity: .3;
++}
++
++.banner .logo{
++	position: absolute;
++	display: flex;
++	align-items: center;
++	justify-content: center;
++	top: 20px;
++	left: 40px;
++	width: 160px;
++	height: 160px;
++	border-radius: 50%;
++	padding: 20px;
++	background: rgba(255,255,255,.4);
++	border: 3px solid rgba(255,255,255,.8);
++	box-shadow: 1px 1px 5px rgba(0,0,0,.5),
++				inset 1px 1px 5px rgba(0,0,0,.5);
++	overflow: hidden;
++}
++
++.banner .logo img{
++	display: block;
++	width: 100%;
++}
++
++.banner h1{
++	display: block;
++	color: #fff;
++	text-align: center;
++	line-height: 200px;
++	text-transform: uppercase;
++	text-shadow: 1px 1px 5px rgba(0,0,0,.5);
++}
++
++
++.navbar-primary{
++	margin-bottom: 3rem;
++}
++
++.aside-module{
++	background: #005883;
++	padding: 1rem;
++}
++
++.aside-module h4{
++	color: #fff;
++}
++
++.aside-module .list-menu{
++	list-style: none;
++	margin: 0px;
++	padding: 0px;
++}
++
++.aside-module .list-menu a{
++	display: block;
++	border-bottom: 1px solid rgba(0,0,0,.1);
++	border-top: 1px solid rgba(255,255,255,.5);
++	color: #fff;
++}
++
++.aside-module .list-menu li:first-child a{
++	border-top: 0px;
++}
++
++.aside-module .list-menu li:last-child a{
++	border-bottom: 0px;
++}
++
++footer{
++    padding: 2.5rem 0;
++    color: #999;
++    text-align: center;
++    background-color: #f7f7f7;
++    border-top: .05rem solid #e5e5e5;
++    margin-top: 50px;
++}
++
++footer p{
++	margin-bottom: 5px;
++}
++
++.table-datos th{
++	background: #F5F5F5;
++}
++
++.codigo-ejemplo, .referencias{
++    background: #F5F5F5;
++    border: 1px solid #F0F0F0;
++    font-family: Consolas,"Liberation Mono","Droid Sans Mono",Monaco,Menlo,"Courier New",Courier,monospace;
++    font-size: 14px;
++    font-size-adjust: .5;
++    margin: 1em 0;
++    overflow: auto;
++    padding: .5em;
++} 
+  
+BIN  fonts/FontAwesome.otf
+Binary file not shown.
+  
+BIN  fonts/fontawesome-webfont.eot
+Binary file not shown.
+   
+2,671  fonts/fontawesome-webfont.svg
+Large diffs are not rendered by default.
+
+  
+BIN  fonts/fontawesome-webfont.ttf
+Binary file not shown.
+  
+BIN  fonts/fontawesome-webfont.woff
+Binary file not shown.
+  
+BIN  fonts/fontawesome-webfont.woff2
+Binary file not shown.
+  
+BIN  fonts/glyphicons-halflings-regular.eot
+Binary file not shown.
+   
+288  fonts/glyphicons-halflings-regular.svg
+Large diffs are not rendered by default.
+
+  
+BIN  fonts/glyphicons-halflings-regular.ttf
+Binary file not shown.
+  
+BIN  fonts/glyphicons-halflings-regular.woff
+Binary file not shown.
+  
+BIN  fonts/glyphicons-halflings-regular.woff2
+Binary file not shown.
+   
+BIN  img/hexagon.png
+Binary file not shown.
+  
+19  img/index.html
+@@ -1,19 +0,0 @@
+-<!DOCTYPE html>
+-
+-<html>
+-
+-<head>
+-<title>
+-403 Forbidden
+-</title>
+-
+-</head>
+-
+-<body>
+-
+-
+-<p>Directory access is forbidden.</p>
+-
+-
+-</body>
+-</html>
+   
+BIN  img/logo.png
+Binary file not shown.
+  
+89  index.html
+@@ -1,10 +1,93 @@
+ <!DOCTYPE html>
+-
+ <html lang="es">
+ <head>
++	<meta charset="utf-8">
++	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
++	<title>OVI</title>
++	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
++	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
++	<link rel="stylesheet" type="text/css" href="css/style.css">
+ </head>
+ <body>
++	<header>
++		<div class="banner">
++			<div class="logo">
++				<img src="img/logo.png">
++			</div>
++			<h1>Diseño de sitios web</h1>
++		</div>
++		<nav class="navbar navbar-primary navbar-expand-md navbar-dark bg-dark">
++			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
++				<span class="navbar-toggler-icon"></span>
++			</button>
++
++			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
++				<ul class="navbar-nav mr-auto">
++					<li class="nav-item active">
++						<a class="nav-link" href="index.html">Inicio</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion2.html">Seccion 2</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion3.html">Seccion 3</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion4.html">Seccion 4</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="acerca.html">Acerca de</a>
++					</li>
++				</ul>
++			</div>
++		</nav>
++	</header>
++	<div class="container">
++		<div class="row">
++			<div class="col-sm-8 text-justify">
++				<h2>Inicio</h2><br>
++				<p>En 1994 un programador nacido en Groenlandia, llamado Rasmus Lerdorf desarrollo un código que le ayudaría a crear su página web personal de manera más sencilla.</p>
++				<p>o llamó Personal Home Page  Tools (PHP Tools) o herramientas para páginas iniciales personales. De las primeras tres palabras en inglés surge el nombre del lenguaje que finalmente se liberó al público, gratis, en 1995.</p>
++				<p>Dos años más tarde, junto a otras personas, se reescribe parte del código del lenguaje y se lanza la versión de PHP que ha llevado el lenguaje al estrellato: PHP 3. Un lenguaje simple, rápido y dinámico que permite crear páginas Web interactivas con muy poco código.</p>
++
++			</div>
++			<aside class="col-sm-3 ml-sm-auto">
++				<div class="aside-module">
++					<h4>Menu</h4>
++					<ul class="list-menu">
++						<li>
++							<a class="nav-link" href="index.html">Inicio</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion2.html">Seccion 2</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion3.html">Seccion 3</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion4.html">Seccion 4</a>
++						</li>
++						<li>
++							<a class="nav-link" href="acerca.html">Acerca de</a>
++						</li>
++					</ul>
++				</div>
++			</aside>
++			<div class="col-md-6 offset-md-3" style="max-height: 500px;overflow:scroll;margin-top: 50px;">
++				<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
++			</div>
++		</div>
++	</div>
++	<footer>
++		<p>Desarrolado por: <b>Ricardo Alberto Salinas</b></p>
++		<p>Universidad nacional abierta y a distancia</p>
++		<p>UNAD</p>
++		<p>2018</p>
++		<center><h2>Contador de Visitas</center></h2><a href="https://www.cerotec.net/estadisticas-120041/unad.com" title="abrir detalles"><img src="https://www.cerotec.net/contador.php?t=16&s=2&i=120041" alt="www.cerotec.net"></a> <br><a href='' style='font-size:12px;' ></a></center>
++	</footer>
++
++	<script src="js/jquery.min.js"></script>
++	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
++	<script src="js/bootstrap.min.js"></script>
+ </body>
+-<footer>
+-</footer>
+ </html> 
+  
+7  js/bootstrap.min.js
+Large diffs are not rendered by default.
+
+  
+19  js/index.html
+@@ -1,19 +0,0 @@
+-<!DOCTYPE html>
+-
+-<html>
+-
+-<head>
+-<title>
+-403 Forbidden
+-</title>
+-
+-</head>
+-
+-<body>
+-
+-
+-<p>Directory access is forbidden.</p>
+-
+-
+-</body>
+-</html>
+  
+4  js/jquery.min.js
+Large diffs are not rendered by default.
+
+  
+19  pagina/index.html
+@@ -1,19 +0,0 @@
+-<!DOCTYPE html>
+-
+-<html>
+-
+-<head>
+-<title>
+-403 Forbidden
+-</title>
+-
+-</head>
+-
+-<body>
+-
+-
+-<p>Directory access is forbidden.</p>
+-
+-
+-</body>
+-</html>
+  
+99  seccion2.html
+@@ -0,0 +1,99 @@
++<!DOCTYPE html>
++<html lang="es">
++<head>
++	<meta charset="utf-8">
++	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
++	<title>OVI</title>
++	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
++	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
++	<link rel="stylesheet" type="text/css" href="css/style.css">
++</head>
++<body>
++	<header>
++		<div class="banner">
++			<div class="logo">
++				<img src="img/logo.png">
++			</div>
++			<h1>Diseño de sitios web</h1>
++		</div>
++		<nav class="navbar navbar-primary navbar-expand-md navbar-dark bg-dark">
++			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
++				<span class="navbar-toggler-icon"></span>
++			</button>
++
++			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
++				<ul class="navbar-nav mr-auto">
++					<li class="nav-item active">
++						<a class="nav-link" href="index.html">Inicio</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion2.html">Seccion 2</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion3.html">Seccion 3</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion4.html">Seccion 4</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="acerca.html">Acerca de</a>
++					</li>
++				</ul>
++			</div>
++		</nav>
++	</header>
++	<div class="container">
++		<div class="row">
++			<div class="col-sm-8 text-justify">
++				<h2>Seccion 2</h2>
++
++
++				<p>En la presente sección vamos a crear, probar y tratar de entender nuestro código PHP, con primeras aproximaciones a nuestro código real.</p>
++
++				<p>Notemos que es posible la intercalación de órdenes en lenguaje PHP, alternándolas dentro de una página escrita en lenguaje HTML, tantas veces como sea necesario, pueden abrirse y cerrarse los tags de PHP tantas veces como queramos.</p>
++
++				<p>A partir de este momento comenzaremos a interactuar con datos y códigos HTML de manera más amplia. Recién hemos visto como la función print o el comando echo son capaces de escribir, en el código HTML de una página, algún dato que estaba almacenado en una variable.</p>
++				<p>Pero el valor de esa variable lo definíamos nosotros. ¿Qué pasaría si dejáramos que fuera el usuario de nuestro sitio web el que le ingresara valores a algunas de nuestras variables?</p>
++				<p>La respuesta es que comenzaríamos a crear páginas web dinámicas, es decir: páginas cuyo contenido cambiara (totalmente, o solo en parte), según las acciones que realice el usuario junto antes de pedir que se le muestre una de esas páginas. En definitiva: paginas interactivas.</p>
++
++			</div>
++			<aside class="col-sm-3 ml-sm-auto">
++				<div class="aside-module">
++					<h4>Menu</h4>
++					<ul class="list-menu">
++						<li>
++							<a class="nav-link" href="index.html">Inicio</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion2.html">Seccion 2</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion3.html">Seccion 3</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion4.html">Seccion 4</a>
++						</li>
++						<li>
++							<a class="nav-link" href="acerca.html">Acerca de</a>
++						</li>
++					</ul>
++				</div>
++			</aside>
++			<div class="col-md-6 offset-md-3" style="max-height: 500px;overflow:scroll;margin-top: 50px;">
++				<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
++			</div>
++		</div>
++	</div>
++	<footer>
++		<p>Desarrolado por: <b>Ricardo Alberto Salinas</b></p>
++		<p>Universidad nacional abierta y a distancia</p>
++		<p>UNAD</p>
++		<p>2018</p>
++		<center><h2>Contador de Visitas</center></h2><a href="https://www.cerotec.net/estadisticas-120041/unad.com" title="abrir detalles"><img src="https://www.cerotec.net/contador.php?t=16&s=2&i=120041" alt="www.cerotec.net"></a> <br><a href='' style='font-size:12px;' ></a></center>
++	</footer>
++
++	<script src="js/jquery.min.js"></script>
++	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
++	<script src="js/bootstrap.min.js"></script>
++</body>
++</html> 
+  
+164  seccion3.html
+@@ -0,0 +1,164 @@
++<!DOCTYPE html>
++<html lang="es">
++<head>
++	<meta charset="utf-8">
++	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
++	<title>OVI</title>
++	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
++	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
++	<link rel="stylesheet" type="text/css" href="css/style.css">
++</head>
++<body>
++	<header>
++		<div class="banner">
++			<div class="logo">
++				<img src="img/logo.png">
++			</div>
++			<h1>Diseño de sitios web</h1>
++		</div>
++		<nav class="navbar navbar-primary navbar-expand-md navbar-dark bg-dark">
++			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
++				<span class="navbar-toggler-icon"></span>
++			</button>
++
++			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
++				<ul class="navbar-nav mr-auto">
++					<li class="nav-item active">
++						<a class="nav-link" href="index.html">Inicio</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion2.html">Seccion 2</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion3.html">Seccion 3</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion4.html">Seccion 4</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="acerca.html">Acerca de</a>
++					</li>
++				</ul>
++			</div>
++		</nav>
++	</header>
++	<div class="container">
++		<div class="row">
++			<div class="col-sm-8 text-justify">
++				<h2>Seccion 3</h2>
++				
++				<p>Aunque a quienes no son programadores todavía les cueste un poco de trabajo imaginar la verdadera utilidad de algo tan simple como una variable, continuamente tendremos la necesidad de que el servidor recuerde por un momento algún dato, ya sea porque se lo hayamos escrito nosotros mismos dentro del código que programamos, o porque el usuario haya ingresado ese dato en un formulario, o porque sea fruto de una operación realizada por el intérprete de PHP o que sea resultado de la ejecución de una función. Todo el tiempo usaremos variables. Y no es una exageración ya que, prácticamente, no realizaremos ninguna página que no utilice numerosas variables.</p>
++				<p>Para mostrar datos que se enviaron desde un enlace o un formulario, podemos utilizar cualquiera de los métodos que ya hemos aprendido en capitulo anteriores:</p>
++				<p>Dejar preparadas las etiquetas HTML dentro de las que intercalaremos con echo las variables recibidas, o hacer que PHP genere todos los datos de las variables como el propio código HTML que las envuelva. Pero, esperar un dato del usuario para mostrarlo a continuación, tiene sus riesgos. Como la llegada de estos datos depende del usuario, muchas veces nos encontraremos con la sorpresa de que el dato esperado no llego; es decir, nada nos garantiza de manera infalible que el usuario haya proporcionado esos datos que estamos esperando para usarlos a continuación en el armado de una página dinámica que muestre esos datos.</p>
++
++
++				<h3 id="datos" style="margin-top: 20px;">Datos</h3>
++				<table class="table table-datos"> 
++					<tbody>
++						<tr>
++							<th>Definición</th>
++							<td>Posiciona los elementos de forma normal, relativa, absoluta o fija</td>
++						</tr>
++						<tr>
++							<th>Valores <br> permitidos</th>
++							<td>
++								Alguno o todos los siguientes valores y en cualquier orden:
++								<ul>
++									<li>static</li>
++									<li>relative</li>
++									<li>absolute</li>
++									<li>fixed</li>
++									<li><a href="./inherit.html">inherit</a></li>
++								</ul>
++							</td>
++						</tr>
++						<tr>
++							<th>Valor inicial</th>
++							<td>static</td>
++						</tr>
++						<tr>
++							<th>Se aplica a</th>
++							<td>Todos los elementos</td>
++						</tr>
++						<tr>
++							<th>Válida en</th>
++							<td><a href="./medios.html">medios visuales</a></td>
++						</tr>
++						<tr>
++							<th>Se hereda</th>
++							<td>no</td>
++						</tr>
++						<tr class="nobottom">
++							<th>Definición en<br>el estándar</th>
++							<td><a href="http://www.w3.org/TR/CSS2/visuren.html#propdef-position">w3.org/TR/CSS2/visuren.html#propdef-position</a></td>
++						</tr>
++					</tbody>
++				</table>
++				<h3 id="uso" style="margin-top: 20px;">Uso</h3>
++				<p>Según el estándar CSS 2.1, los elementos de una página HTML se colocan utilizando alguno de los tres algoritmos de posicionamiento siguientes:</p>
++				<ul>
++					<li>Posicionamiento normal o "Normal flow": comprende el posicionamiento de los elementos de bloque, los elementos en línea y el posicionamiento relativo aplicado con la propiedad position: relative.</li>
++					<li>Posicionamiento flotante o "Floats": primero se coloca la caja en su posición normal (utilizando el anterior tipo de posicionamiento) y después se saca de esa posición para colocarlo lo más a la derecha (float: right) o lo más a la izquierda (float: left) posible.</li>
++					<li>Posicionamiento absoluto o "Absolute positioning". In the absolute positioning model, a box is removed from the normal flow entirely (it has no impact on later siblings) and assigned a position with respect to a containing block.</li>
++				</ul>
++				<p>Los elementos que utilizan el posicionamiento flotante o el posicionamiento absoluto se dice que están "out of the flow".</p>
++				<p>La propiedad position, junto con la propiedad float, permite modificar la posición de cualquier elemento de la página. La especificación CSS 2.1 define cuatro formas diferentes de calcular la posición de un elemento mediante la propiedad position, que se corresponden con los cuatro valores permitidos para esta propiedad: static, relative, absolute y fixed.</p>
++				<p>Si el elemento es de bloque, empieza en una nueva línea y ocupa todo el sitio disponible hasta el final de la línea en la que se encuentra. Si el elemento es en línea, ocupa solamente el espacio necesario para que se vean sus contenidos.</p>
++				<p>Cuando un elemento está posicionado de forma static, no se tienen en cuenta los valores de sus propiedades top, right, bottom y left.</p>
++				<p>El valor relative también se corresponde al posicionamiento normal. No obstante, a diferencia del valor static, el posicionamiento relative desplaza a las cajas respecto de su posición original. Este desplazamiento no afecta al resto de elementos de la página, por lo que se pueden producir solapamientos y efectos no deseados.</p>
++				<p>El estándar de CSS 2.1 indica que la propiedad position: relative no está definida para aquellos elementos cuya propiedad display sea table-row-group, table-header-group, table-footer-group, table-row, table-column-group, table-column, table-cell y table-caption.</p>
++
++				<h3 id="multimedia">Multimedia</h3>
++				<div class="col-xs-12 text-center" style="margin-top: 20px;">
++					<iframe width="560" height="315" src="https://www.youtube.com/embed/eNGa5_yxmUw?rel=0" frameborder="0" allowfullscreen></iframe>
++				</div>
++
++				<h3 id="referencias" style="margin-top: 50px;">Referencias</h3>
++				<div class="referencias text-left">
++					<ul>
++						<li>
++							MDN web docs - CarmenCamacho (2017, 06, 01). Position. Recuperado de: <a href="https://developer.mozilla.org/es/docs/Web/CSS/position">https://developer.mozilla.org/es/docs/Web/CSS/position</a>.
++						</li>
++						<li>
++							LIBROSWEB. Propiedad position. Recuperado de: <a href="http://librosweb.es/referencia/css/seccion3.html">http://librosweb.es/referencia/css/seccion3.html</a>.
++						</li>
++						<li>
++							EDteam (2015, 03, 08). Position en CSS - Guia completa (1, fundamentos). Recuperado de: <a href="https://www.youtube.com/watch?v=eNGa5_yxmUw">https://www.youtube.com/watch?v=eNGa5_yxmUw</a>.
++						</li>
++					</ul>
++				</div>
++			</div>
++			<aside class="col-sm-3 ml-sm-auto">
++				<div class="aside-module">
++					<h4>Menu</h4>
++					<ul class="list-menu">
++						<li>
++							<a class="nav-link" href="#datos">Datos</a>
++						</li>
++						<li>
++							<a class="nav-link" href="#uso">Uso</a>
++						</li>
++						<li>
++							<a class="nav-link" href="#multimedia">Multimedia</a>
++						</li>
++						<li>
++							<a class="nav-link" href="#referencias">Referencias</a>
++						</li>
++					</ul>
++				</div>
++			</aside>
++		</div>
++	</div>
++	<footer>
++		<p>Desarrolado por: <b>Ricardo Alberto Salinas</b></p>
++		<p>Universidad nacional abierta y a distancia</p>
++		<p>UNAD</p>
++		<p>2018</p>
++		<center><h2>Contador de Visitas</center></h2><a href="https://www.cerotec.net/estadisticas-120041/unad.com" title="abrir detalles"><img src="https://www.cerotec.net/contador.php?t=16&s=2&i=120041" alt="www.cerotec.net"></a> <br><a href='' style='font-size:12px;' ></a></center>
++	</footer>
++
++	<script src="js/jquery.min.js"></script>
++	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
++	<script src="js/bootstrap.min.js"></script>
++</body>
++</html> 
+  
+92  seccion4.html
+@@ -0,0 +1,92 @@
++<!DOCTYPE html>
++<html lang="es">
++<head>
++	<meta charset="utf-8">
++	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
++	<title>OVI</title>
++	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
++	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
++	<link rel="stylesheet" type="text/css" href="css/style.css">
++</head>
++<body>
++	<header>
++		<div class="banner">
++			<div class="logo">
++				<img src="img/logo.png">
++			</div>
++			<h1>Diseño de sitios web</h1>
++		</div>
++		<nav class="navbar navbar-primary navbar-expand-md navbar-dark bg-dark">
++			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
++				<span class="navbar-toggler-icon"></span>
++			</button>
++
++			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
++				<ul class="navbar-nav mr-auto">
++					<li class="nav-item active">
++						<a class="nav-link" href="index.html">Inicio</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion2.html">Seccion 2</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion3.html">Seccion 3</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="seccion4.html">Seccion 4</a>
++					</li>
++					<li class="nav-item">
++						<a class="nav-link" href="acerca.html">Acerca de</a>
++					</li>
++				</ul>
++			</div>
++		</nav>
++	</header>
++	<div class="container">
++		<div class="row">
++			<div class="col-sm-8 text-justify">
++				<h2>Seccion 4</h2>
++
++
++				<p>Contenido de la pagina 4.</p>
++			</div>
++			<aside class="col-sm-3 ml-sm-auto">
++				<div class="aside-module">
++					<h4>Menu</h4>
++					<ul class="list-menu">
++						<li>
++							<a class="nav-link" href="index.html">Inicio</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion2.html">Seccion 2</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion3.html">Seccion 3</a>
++						</li>
++						<li>
++							<a class="nav-link" href="seccion4.html">Seccion 4</a>
++						</li>
++						<li>
++							<a class="nav-link" href="acerca.html">Acerca de</a>
++						</li>
++					</ul>
++				</div>
++			</aside>
++			<div class="col-md-6 offset-md-3" style="max-height: 500px;overflow:scroll;margin-top: 50px;">
++				<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
++			</div>
++		</div>
++	</div>
++	<footer>
++		<p>Desarrolado por: <b>Ricardo Alberto Salinas</b></p>
++		<p>Universidad nacional abierta y a distancia</p>
++		<p>UNAD</p>
++		<p>2018</p>
++		<center><h2>Contador de Visitas</center></h2><a href="https://www.cerotec.net/estadisticas-120041/unad.com" title="abrir detalles"><img src="https://www.cerotec.net/contador.php?t=16&s=2&i=120041" alt="www.cerotec.net"></a> <br><a href='' style='font-size:12px;' ></a></center>
++	</footer>
++
++	<script src="js/jquery.min.js"></script>
++	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
++	<script src="js/bootstrap.min.js"></script>
++</body>
++</html> 

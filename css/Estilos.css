@@ -1,0 +1,73 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+@font-face {
+    font-family: 'angsana_newregular';
+    src: url('../fond/angsa-webfont.woff2') format('woff2'),
+         url('../fond/angsa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: : "angsana_newregular", Helvetica, verdana;  
+	background: #212121;
+	color: #333333;
+	font-size: 2em;
+    }
+h1 {
+	color: white;
+	margin: 0.25em auto;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(165, 70, 134);
+}
+
+header{
+	background: white;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0.25em;
+	text-align: center;
+}
+
+
+ nav, footer{
+	background: #1E6381;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0.25em;
+	text-align: center;
+}
+
+section#contenedor{
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+section#principal, aside{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0.2em auto;
+	max-width: 960px;
+	min-height: 200px;
+	vertical-align: top;
+	width: 65%;
+}
+article {
+	background: #011e30;
+	border-radius: 0.56em; 
+	min-height: 140px;
+	padding: 0.25em;
+}
+aside {
+	width: 30%; 
+}

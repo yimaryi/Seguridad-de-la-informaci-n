@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 12px
+}
+
+h1 {
+	background: #A54686;
+	color: #FFFFFF;
+}
+
+p {
+	font-size: 16px;
+}
+
+div {
+	float: left;
+	margin: 10px
+	background: grey;
+	width: 45%:;
+	padding: 10px;
+}
+
